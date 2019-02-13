@@ -1,14 +1,60 @@
-test1
-test2
-test3
-test4
-test5
-test6
-test7
-test8
-test9
-test10
-test11
-test12
-test13
-test14
+Ravenous Chupacabra
+Golgari Findbroker
+Etrata, the Silencer
+Golgari Findbroker
+Vampire Sovereign
+Assassin's Trophy
+Thief of Sanity
+Thief of Sanity
+Etrata, the Silencer
+Etrata, the Silencer
+Thief of Sanity
+Biogenic Ooze
+Biogenic Ooze
+Ravenous Chupacabra
+Ochran Assassin
+Pause For Reflection
+Golgari Findbroker
+Golgari Findbroker
+Druid of the Cowl
+Murder
+Druid of the Cowl
+Vraska, Golgari Queen
+Necrotic Wound
+Pause for Reflection
+Sovereign's Bite
+Open the Graves
+Pitiless Gorgon
+Swarm Guildmage
+Etrata the Silencer
+Druid of the Cowl
+Thief of Sanity
+Severed Strands
+Mephitic Vapors
+Enchantment(defense)
+Enchantment(offense)
+black/blue
+black/blue
+black/blue
+black/blue
+black/blue
+black
+green
+black
+green/black
+green/black
+green/black
+green/black
+green/blue
+green/blue
+green/blue
+green/blue
+black
+black
+black
+black
+black
+green
+green
+green
+green

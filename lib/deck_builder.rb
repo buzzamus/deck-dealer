@@ -1,14 +1,16 @@
 class DeckBuilder
-  attr_reader :file, :deck
+  attr_reader :file
+  attr_accessor :deck
   def initialize(file)
     @file = file
-    @deck = []
+    @deck = create_deck
   end
 
   def create_deck
-    File.foreach(file) do |card|
-      deck << card
+    card_arr = []
+    File.foreach(@file) do |card|
+      card_arr << card
     end
-    return deck
+    return card_arr
   end
 end

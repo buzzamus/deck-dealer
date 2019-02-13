@@ -1,15 +1,12 @@
 require './lib/deck_builder'
-require './lib/deck_tester'
 
 describe 'deck_builder' do
-  let(:test_arr) { ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'] }
-  let(:deck) { DeckTester.new(test_arr.dup) }
+  let(:deck) { DeckBuilder.new('cards.txt') }
 
   it 'shuffles the array into random order' do
     deck.shuffle
-    expect(deck.cards.count).to eq(test_arr.count)
-    expect(test_arr).not_to eq(deck.cards)
-    expect(test_arr).to eq(deck.cards.sort)
+    expect(deck.cards.count).to eq(60)
+    expect(deck.create_deck).to eq(deck.cards.sort)
   end
 
   it 'deals 7 cards for initial hand' do
@@ -23,11 +20,11 @@ describe 'deck_builder' do
     expect(current_hand.length).to eq(1)
   end
 
-  it 'stops dealing cards when the deck is empty' do
+  it 'stops dealing card values when the deck is empty' do
     deck.initial_deal
     4.times do
       deck.deal
     end
-    expect(deck.cards.length).to eq(0)
+    expect(deck.cards.length).to eq(49)
   end
 end

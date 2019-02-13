@@ -1,8 +1,6 @@
 require './lib/deck_builder'
-require './lib/deck_tester'
 
-cards = DeckBuilder.new('cards.txt')
-tested_deck = DeckTester.new(cards.deck)
+tested_deck = DeckBuilder.new('cards.txt')
 
 namespace :deck do
   desc 'Runs main program'

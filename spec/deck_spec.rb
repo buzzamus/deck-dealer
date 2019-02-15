@@ -1,12 +1,15 @@
 require './lib/deck_builder'
 
 describe 'deck_builder' do
+  # create 2 objects to ensure they are the same, but different (card randomness)
   let(:deck) { DeckBuilder.new('cards.txt') }
+  let(:deck2) { DeckBuilder.new('cards.txt') }
 
   it 'shuffles the array into random order' do
     deck.shuffle
     expect(deck.cards.count).to eq(60)
-    expect(deck.create_deck).to eq(deck.cards.sort)
+    expect(deck.cards).not_to eq(deck2.cards)
+    expect(deck.cards.sort).to eq(deck2.cards.sort)
   end
 
   it 'deals 7 cards for initial hand' do
@@ -20,7 +23,7 @@ describe 'deck_builder' do
     expect(current_hand.length).to eq(1)
   end
 
-  it 'stops dealing card values when the deck is empty' do
+  it 'removes card from deck after card is dealt' do
     deck.initial_deal
     4.times do
       deck.deal

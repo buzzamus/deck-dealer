@@ -31,8 +31,8 @@ Druid of the Cowl
 Thief of Sanity
 Severed Strands
 Mephitic Vapors
-Enchantment(defense)
-Enchantment(offense)
+Nature's Claim
+Crushing Canopy
 black/blue
 black/blue
 black/blue

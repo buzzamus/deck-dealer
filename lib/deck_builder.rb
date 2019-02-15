@@ -23,7 +23,6 @@ class DeckBuilder
     File.foreach(@file) do |card|
       card_arr << card
     end
-    #sort in alphabetical order for testing purposes
-    return card_arr.sort
+    return card_arr
   end
 end

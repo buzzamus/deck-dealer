@@ -1,6 +1,6 @@
 require './lib/deck_builder'
 
-tested_deck = DeckBuilder.new('cards.txt')
+tested_deck = DeckBuilder.new('test.csv')
 
 namespace :deck do
   desc 'Runs main program'
@@ -22,5 +22,9 @@ namespace :deck do
       Rake::Task["deck:deal"].reenable
       Rake::Task["deck:deal"].invoke
     end
+  end
+
+  task :stats do
+    tested_deck.print_stats
   end
 end

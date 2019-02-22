@@ -1,8 +1,11 @@
 require './lib/deck_builder'
 
-tested_deck = DeckBuilder.new('test.csv')
 
 namespace :deck do
+  puts "What is the name of your file?"
+  print "> "
+  file = $stdin.gets.chomp
+  tested_deck = DeckBuilder.new(file)
   desc 'Runs main program'
   task :start do
     tested_deck.shuffle
